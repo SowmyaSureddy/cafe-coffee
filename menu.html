@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>Coffee Cafe - Sample</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="logo.jpeg"></a>
+      <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Menu</h1>
+  </section>
+
+<!---------menu------->
+
+<section class="menu">
+  <h1>OUR MENU</h1>
+  <p>Our new seasonal beverages are here!Give them a try</p>
+  <div class="row">
+    <div class="menu-col">
+      <h3>BEVERAGES</h3>
+      <p><Iced teas<br>Hot teas<br>Irish Coffee<br>Drip Coffee<br>Espresso<br>Cafe au lait<br>Mimosa<br>Milkshakes</p>
+    </div>
+    <div class="menu-col">
+      <h3>BREAKFAST</h3>
+      <p>Spinach salad<br>Arugula salad<br>Greek salad<br>B.L.T sandwich<br>Caprese sd<br>Tuna salad<br>Turkey sd<br>Chicken salad</p>
+    </div>
+    <div class="menu-col">
+      <h3>DRINKS</h3>
+      <p>Old fashioned<br>Negroni<br>Daiquiri<br>Dry martini<br>Margarita<br>Espresso martini<br>Whiskey sour<br>Bloody Mary</p>
+    </div>
+  </div>
+</section>
+
+<!--------facilities------>
+
+<section class="facilities">
+  <h1>Our Facilities</h1>
+  <p>A lot can happen over HAPPY COFFEE</p>
+  <div class="row">
+    <div class="facilities-col">
+      <img src="library.jpeg">
+      <h3>World Library</h3>
+      <p>Elements of the interior decor at this Book Cafe are magazine racks and bookshelves fully packed with local, foreign and global books, magazines,novels and newspapers.</p>
+    </div>
+    <div class="facilities-col">
+      <img src="wifi.jpeg">
+      <h3>Free Quality Wifi</h3>
+      <p>Enjoy maximum productivity in your work and study.You don't have to worry about laptop going off since there are plenty of power sockets to ensure your machine is fuelled.</p>
+    </div>
+    <div class="facilities-col">
+      <img src="bar.jpeg">
+      <h3>Cozy Mini Bar</h3>
+      <p>Our drinks have always been vehicles for stories– be it about cultures that inspire them,ingredients that bring them to fruition,crafted by masters around the region.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!--------footer------>
+
+<section class="footer">
+  <h4>About Us</h4>
+  <p>We are coffee punks who don't exaggerate about their Americanos.Time, technique and<br> temperature need to be on point to make the best cup of coffee, but it's all for nothing without quality<br> beans roasted to perfection.</p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i> 
+  </div>
+  <p>With <i class="fa fa-heart-o"></i> Sowmya</p>
+</section>
+
+
+
+
+
+
+<!------javascript for toggle menu----->
+<script>
+  var navLinks = document.getElementById("navLinks")
+  function showMenu(){
+  navLinks.style.right = "0";
+  }
+  function hideMenu(){
+  navLinks.style.right = "-400px";
+  }
+</script>
+
+</body>
+</html>

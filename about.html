@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>Coffee Cafe - Sample</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="logo.jpeg"></a>
+      <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+  </section>
+
+<!---------about us content------->
+
+<section class="about-us">
+  <div class="row">
+    <div class="about-col">
+      <h1>We are the World's Happiest Cafe</h1>
+      <p>Founded by longtime friends Leejungseok Adams, a talented chef and Choi Sooyeonjun, an experienced roaster who pursued a career on both coasts, Happy Cafe offers a selection of custom, house roasted blends and seasonal single-origin beans that have been carefully sourced and specially roasted to provide the best drinking experience possible.<br>Happy Cafe is committed to producing only the freshest, highest quality coffee and cultivating strong relationships with our wholesale partners. We care deeply about what we do, we are proud to be partnered with some of the finest cafes, restaurants and shops throughout the city and beyond.</p>
+      <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+    </div>
+    <div class="about-col">
+      <img src="about.jpg">
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--------footer------>
+
+<section class="footer">
+  <h4>About Us</h4>
+  <p>We are coffee punks who don't exaggerate about their Americanos.Time, technique and<br> temperature need to be on point to make the best cup of coffee, but it's all for nothing without quality<br> beans roasted to perfection.</p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i> 
+  </div>
+  <p>With <i class="fa fa-heart-o"></i> Sowmya</p>
+</section>
+
+
+
+
+
+
+<!------javascript for toggle menu----->
+<script>
+  var navLinks = document.getElementById("navLinks")
+  function showMenu(){
+  navLinks.style.right = "0";
+  }
+  function hideMenu(){
+  navLinks.style.right = "-400px";
+  }
+</script>
+
+</body>
+</html>
